@@ -556,15 +556,27 @@
           </div>
         </div>
 
+		<div class="row">
+			<div class="col-md-12 col-12 mb-4 text-center">
+				<div id="pph-hireme"></div>
+			</div>
+		</div>
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-4 d-flex ftco-animate">
           	<div class="align-self-stretch box text-center p-4 shadow">
-          		<!-- <div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div> -->
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-share2"></span>
+          		</div>
           		<div>
-	          		<h3 class="mb-4">People Per Hour</h3>
-					<div id="pph-hireme"></div>
+					  <h3 class="mb-4">Reach me out</h3>
+					  <a href="https://www.linkedin.com/in/saadsufyan/" target="_blank"> <span class="icon-linkedin-square"></span> </a>
+					  <a href="https://github.com/saadsufyan" target="_blank"> <span class="icon-github-square"></span> </a>
+					  <a href="https://bitbucket.org/saadsufyan1/" target="_blank"> <span class="icon-bitbucket"></span> </a>
+					  <a href="skype:saad.sufyan1"> <span class="icon-skype" target="_blank"></span> </a>
+					  <a href="https://www.instagram.com/saad.sufyan.1/" target="_blank"> <span class="icon-instagram"></span> </a>
+					  <a href="https://www.twitter.com/saadsufyan/" target="_blank"> <span class="icon-twitter-square"></span> </a>
+
+					<!-- <div id="pph-hireme"></div> -->
 		        </div>
 	          </div>
           </div>
@@ -613,6 +625,8 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
+
+
 <!--
     PeoplePerHour Profile Widget
     The div#pph-hire me is the element
@@ -623,10 +637,16 @@
 <!-- <div id="pph-hireme"></div> -->
 <script type="text/javascript">
 (function(d, s) {
+
     var useSSL = 'https:' == document.location.protocol;
     var js, where = d.getElementsByTagName(s)[0],
     js = d.createElement(s);
-    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2353267343/3713133.js?width=300&height=255&orientation=vertical&theme=light&hourlies=615511&rnd='+parseInt(Math.random()*10000, 10);
+	alert(screen.width);
+	if (screen.width > 800) {
+		js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2353267343/3713133.js?width=728&height=123&orientation=horizontal&theme=light&hourlies=615511&rnd='+parseInt(Math.random()*10000, 10);
+	} else {
+		js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/2353267343/3713133.js?width=300&height=255&orientation=vertical&theme=light&hourlies=615511&rnd='+parseInt(Math.random()*10000, 10);
+	}
     try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
 }(document, 'script'));
 </script>
